@@ -1,5 +1,7 @@
 
-
+:root{
+	--font-title: "LGEI Headline";
+}
 // @font-face {
 //   font-family: "LGEI Headline";
 //   src: url("https://admin.lgfamilyclub.com/uploads/default/original/1X/LGEIHeadline-Bold.woff2") format("woff2");
@@ -19,6 +21,13 @@
 	font-family: "LGEI Headline";
 	src: url($LGEIHeadline-Bold) format("woff2");
 	font-weight: 700;
+  }
+
+
+@font-face {
+	font-family: "LGEI Text";
+	src: url($LGEIText-Regular) format("woff2");
+	font-weight: 400;
   }
 // @font-face {
 // 	font-family: "LGEI Headline";
@@ -92,13 +101,13 @@ body {
 h1,
 h2,
 h3 {
-	font-family: "LGEI Headline";
+	font-family: var(--font-title);
 	font-weight: 700;
 }
 
 p {
 	font-family: "LGEI Text", sans-serif;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 // custom search banner customizations
