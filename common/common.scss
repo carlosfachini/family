@@ -580,3 +580,10 @@ html body #main-outlet {
 .title-voting {
   padding-left: 14px;
 }
+
+@layer sidebar {
+  .sidebar-sections{
+    background: rgb(0, 174, 255) !important;
+  }
+
+}
