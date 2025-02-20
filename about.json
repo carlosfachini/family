@@ -8,7 +8,15 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-   
+    "LGEIHeadline-Bold": "assets/fonts/LGEIHeadline-Bold.woff2",
+    "LGEIHeadline-Light": "assets/fonts/LGEIHeadline-Light.woff2",
+    "LGEIHeadline-Regular": "assets/fonts/LGEIHeadline-Regular.woff2",
+    "LGEIHeadline-Semibold": "assets/fonts/LGEIHeadline-Semibold.woff2",
+    "LGEIHeadline-Thin": "assets/fonts/LGEIHeadline-Thin.woff2",
+    "LGEIText-Bold": "assets/fonts/LGEIText-Bold.woff2",
+    "LGEIText-Light": "assets/fonts/LGEIText-Light.woff2",
+    "LGEIText-Regular": "assets/fonts/LGEIText-Regular.woff2",
+    "LGEIText-SemiBold": "assets/fonts/LGEIText-SemiBold.woff2"
   },
   "color_schemes": {
     "family-light": {
