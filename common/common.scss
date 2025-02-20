@@ -1,19 +1,25 @@
 
 
 // @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url($theme-uploads.LGEIHeadline-Bold) format("woff2");
-// 	font-weight: 700;
-// 	font-style: normal;
-//   }
-  
-//   @font-face {
-// 	font-family: "LGEI Text";
-// 	src: url($theme-uploads.LGEIText-Regular) format("woff2");
-// 	font-weight: 400;
-// 	font-style: normal;
-//   }
+//   font-family: "LGEI Headline";
+//   src: url("https://admin.lgfamilyclub.com/uploads/default/original/1X/LGEIHeadline-Bold.woff2") format("woff2");
+//   font-weight: 700;
+//   font-style: normal;
+// }
 
+@font-face {
+  font-family: "LGEI Text";
+  src: url("https://admin.lgfamilyclub.com/uploads/default/original/1X/LGEIText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+	font-family: "LGEI Headline";
+	src: url($LGEIHeadline-Bold) format("woff2");
+	font-weight: 700;
+  }
 // @font-face {
 // 	font-family: "LGEI Headline";
 // 	src: url("fonts/LGEIHeadline-Light") format("woff2"),
