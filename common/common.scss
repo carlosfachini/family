@@ -777,7 +777,13 @@ html body #main-outlet {
 	width: 100%;
 	display: grid;
 	grid-template-areas:"content sidebar" "below-content sidebar" !important;
-	grid-template-rows: 1fr auto;
+	grid-template-rows: auto 1fr ;
 	grid-template-columns: 0 minmax(0, 1fr);
 	gap: 0;
+}
+
+body.has-sidebar-page #main-outlet-wrapper {
+    grid-template-columns: minmax(0, 1fr) var(--d-sidebar-width) ;
+    gap: 0 2em;
+    padding-left: 0;
 }
