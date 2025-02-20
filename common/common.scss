@@ -3,46 +3,10 @@
 	--lgei-headline: "LGEI Headline"
 }
 // Define a camada de fontes
-
-$font-path: "../asstes/fonts/";
-
-@mixin font-face($style-name, $file, $category: "", $weight: normal) {
-	$filepath: "#{$font-path}#{$file}";
-
-	@font-face {
-	font-family: "#{$style-name}";
-	src: url("#{$filepath}.woff2") format("woff2"),
-			url("#{$filepath}.woff") format("woff");
-	font-weight: #{$weight};
-	font-display: swap;
-	font-style: normal;
-	unicode-range: U+000-5FF;
-	}
-
-	%#{$style-name} {
-	font-weight: #{$weight};
-	font-family: "#{$style-name}";
-
-	@if $category != "" {
-		font-family: "#{$style-name}", #{$category};
-	}
-	}
-}
-
-// LGEI Headline
-@include font-face("LGEI Headline", "LGEIHeadline-Thin", "sans-serif", 100);
-@include font-face("LGEI Headline", "LGEIHeadline-Light", "sans-serif", 300);
-@include font-face("LGEI Headline", "LGEIHeadline-Regular", "sans-serif", 400);
-@include font-face("LGEI Headline", "LGEIHeadline-Semibold", "sans-serif", 600);
-@include font-face("LGEI Headline", "LGEIHeadline-Bold", "sans-serif", 700);
-
-// LGEI Text
-@include font-face("LGEI Text", "LGEIText-Light", "sans-serif", 300);
-@include font-face("LGEI Text", "LGEIText-Regular", "sans-serif", 400);
-@include font-face("LGEI Text", "LGEIText-SemiBold", "sans-serif", 600);
-@include font-face("LGEI Text", "LGEIText-Bold", "sans-serif", 700);
-
-
+@font-face {
+	font-family: LGEI Headline;
+	src: url($theme-uploads);
+ }
 
 
 // @font-face {
@@ -132,7 +96,7 @@ body {
 h1,
 h2,
 h3 {
-	font-family: var(--lgei-headline);
+	font-family: LGEI Headline;
 	font-weight: 700;
 }
 
