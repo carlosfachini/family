@@ -581,3 +581,8 @@ html body #main-outlet {
 .title-voting {
   padding-left: 14px;
 }
+
+.full-width .contents .topic-list .topic-list-body .topic-list-item.visited {
+  border: 1px solid rgba(var(--primary-rgb), 0.1);
+  background: orange !important;
+}
