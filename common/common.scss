@@ -1,16 +1,15 @@
 :root {
 	--lgei-headline: "LGEI Headline"
 }
-
-// Define a camada de fontes
-
+$font-path: "/assets/fonts/";
+$LGEIHeadline-Bold: "#{$font-path}LGEIHeadline-Bold.woff2";
 
 @font-face {
-	font-family: "LGEI Headline";
-	src: url($LGEIHeadline-Bold.LGEIHeadline-Bold) format("woff2");
-	font-weight: 700;
-	font-style: normal;
-  }
+  font-family: "LGEI Headline";
+  src: url(#{$LGEIHeadline-Bold}) format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 // @font-face {
