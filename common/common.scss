@@ -1,16 +1,20 @@
-:root {
-	--lgei-headline: "LGEI Headline"
-}
+
 $font-path: "/assets/fonts/";
 $LGEIHeadline-Bold: "#{$font-path}LGEIHeadline-Bold.woff2";
 
 @font-face {
-  font-family: "LGEI Headline";
-  src: url(#{$LGEIHeadline-Bold}) format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
+	font-family: "LGEI Headline";
+	src: url($theme-uploads.LGEIHeadline-Bold) format("woff2");
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Text";
+	src: url($theme-uploads.LGEIText-Regular) format("woff2");
+	font-weight: 400;
+	font-style: normal;
+  }
 
 // @font-face {
 // 	font-family: "LGEI Headline";
