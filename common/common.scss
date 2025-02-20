@@ -1,39 +1,39 @@
 @font-face {
 	font-family: "LGEI Headline";
-	src: url($theme-uploads.LGEIHeadline-Bold) format("woff2"),
-		url($theme-uploads.LGEIHeadline-Bold) format("woff");
+	src: url("/assets/fonts/LGEIHeadline-Bold") format("woff2"),
+		url("/assets/fonts/LGEIHeadline-Bold") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Headline";
-	src: url($theme-uploads.LGEIHeadline-Light) format("woff2"),
-		url($theme-uploads.LGEIHeadline-Light) format("woff");
+	src: url("/assets/fonts/LGEIHeadline-Light") format("woff2"),
+		url("/assets/fonts/LGEIHeadline-Light") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Headline";
-	src: url($theme-uploads.LGEIHeadline-Regular) format("woff2"),
-		url($theme-uploads.LGEIHeadline-Regular) format("woff");
+	src: url("/assets/fonts/LGEIHeadline-Regular") format("woff2"),
+		url("/assets/fonts/LGEIHeadline-Regular") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Headline";
-	src: url($theme-uploads.LGEIHeadline-Semibold) format("woff2"),
-		url($theme-uploads.LGEIHeadline-Semibold) format("woff");
+	src: url("/assets/fonts/LGEIHeadline-Semibold") format("woff2"),
+		url("/assets/fonts/LGEIHeadline-Semibold") format("woff");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Headline";
-	src: url($theme-uploads.LGEIHeadline-Thin) format("woff2"),
-		url($theme-uploads.LGEIHeadline-Thin) format("woff");
+	src: url("/assets/fonts/LGEIHeadline-Thin") format("woff2"),
+		url("/assets/fonts/LGEIHeadline-Thin") format("woff");
 	font-weight: 100;
 	font-style: normal;
 }
@@ -41,32 +41,32 @@
 /* LGEI Text */
 @font-face {
 	font-family: "LGEI Text";
-	src: url($theme-uploads.LGEIText-Bold) format("woff2"),
-		url($theme-uploads.LGEIText-Bold) format("woff");
+	src: url("/assets/fonts/LGEIText-Bold") format("woff2"),
+		url("/assets/fonts/LGEIText-Bold") format("woff");
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Text";
-	src: url($theme-uploads.LGEIText-Light) format("woff2"),
-		url($theme-uploads.LGEIText-Light) format("woff");
+	src: url("/assets/fonts/LGEIText-Light") format("woff2"),
+		url("/assets/fonts/LGEIText-Light") format("woff");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Text";
-	src: url($theme-uploads.LGEIText-Regular) format("woff2"),
-		url($theme-uploads.LGEIText-Regular) format("woff");
+	src: url("/assets/fonts/LGEIText-Regular") format("woff2"),
+		url("/assets/fonts/LGEIText-Regular") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "LGEI Text";
-	src: url($theme-uploads.LGEIText-SemiBold) format("woff2"),
-		url($theme-uploads.LGEIText-SemiBold) format("woff");
+	src: url("/assets/fonts/LGEIText-SemiBold") format("woff2"),
+		url("/assets/fonts/LGEIText-SemiBold") format("woff");
 	font-weight: 600;
 	font-style: normal;
 }
