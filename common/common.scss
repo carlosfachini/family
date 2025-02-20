@@ -1,28 +1,42 @@
-
-:root{
+:root {
 	--lgei-headline: "LGEI Headline"
 }
+
 // Define a camada de fontes
+
+
 @font-face {
-	font-family: LGEI Headline;
-	src: url($theme-uploads);
- }
+	font-family: "LGEI Headline";
+	src: url("assets/fonts/LGEIHeadline-Bold") format("woff2"),
+		url("assets/fonts/LGEIHeadline-Bold") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: "LGEI Headline";
+	src: url("assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
+		url("assets/fonts/LGEIHeadline-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
 
-// @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url($theme-uploads.LGEIHeadline-Bold) format("woff2");
-// 	font-weight: bold;
-// 	font-style: normal;
-//   }
+@font-face {
+	font-family: "LGEI Headline";
+	src: url("../assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
+		url("../assets/fonts/LGEIHeadline-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
 
-// @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url("assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
-// 		url("assets/fonts/LGEIHeadline-Bold.woff") format("woff");
-// 	font-weight: bold;
-// 	font-style: normal;
-// }
+@font-face {
+	font-family: "LGEI Headline";
+	src: url("../fonts/LGEIHeadline-Bold.woff2") format("woff2"),
+		url("../fonts/LGEIHeadline-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
 
 // @font-face {
 // 	font-family: "LGEI Headline";
@@ -96,7 +110,7 @@ body {
 h1,
 h2,
 h3 {
-	font-family: LGEI Headline;
+	font-family: "LGEI Headline";
 	font-weight: 700;
 }
 
