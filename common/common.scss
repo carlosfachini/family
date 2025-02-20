@@ -1,3 +1,91 @@
+
+@font-face {
+	font-family: "LGEI Headline";
+	src: url($theme-uploads.LGEIHeadline-Bold.woff2) format("woff2"),
+		 url($theme-uploads.LGEIHeadline-Bold.woff) format("woff");
+	font-weight: bold;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Headline";
+	src: url($theme-uploads.LGEIHeadline-Light.woff2) format("woff2"),
+		 url($theme-uploads.LGEIHeadline-Light.woff) format("woff");
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Headline";
+	src: url($theme-uploads.LGEIHeadline-Regular.woff2) format("woff2"),
+		 url($theme-uploads.LGEIHeadline-Regular.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Headline";
+	src: url($theme-uploads.LGEIHeadline-Semibold.woff2) format("woff2"),
+		 url($theme-uploads.LGEIHeadline-Semibold.woff) format("woff");
+	font-weight: 600;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Headline";
+	src: url($theme-uploads.LGEIHeadline-Thin.woff2) format("woff2"),
+		 url($theme-uploads.LGEIHeadline-Thin.woff) format("woff");
+	font-weight: 100;
+	font-style: normal;
+  }
+  
+  /* LGEI Text */
+  @font-face {
+	font-family: "LGEI Text";
+	src: url($theme-uploads.LGEIText-Bold.woff2) format("woff2"),
+		 url($theme-uploads.LGEIText-Bold.woff) format("woff");
+	font-weight: bold;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Text";
+	src: url($theme-uploads.LGEIText-Light.woff2) format("woff2"),
+		 url($theme-uploads.LGEIText-Light.woff) format("woff");
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Text";
+	src: url($theme-uploads.LGEIText-Regular.woff2) format("woff2"),
+		 url($theme-uploads.LGEIText-Regular.woff) format("woff");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: "LGEI Text";
+	src: url($theme-uploads.LGEIText-SemiBold.woff2) format("woff2"),
+		 url($theme-uploads.LGEIText-SemiBold.woff) format("woff");
+	font-weight: 600;
+	font-style: normal;
+  }
+
+  body {
+	font-family: "LGEI Text", sans-serif;
+  }
+  
+  h1, h2, h3 {
+	font-family: "LGEI Headline", sans-serif;
+	font-weight: bold;
+  }
+  
+  p {
+	font-family: "LGEI Text", sans-serif;
+	font-weight: normal;
+  }
+
 // custom search banner customizations
 .custom-search-banner-wrap {
 	margin: 0 auto !important;
