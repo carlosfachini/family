@@ -1,75 +1,129 @@
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
-		url("assets/fonts/LGEIHeadline-Bold.woff") format("woff");
-	font-weight: bold;
+
+:root{
+	--lgei-headline: "LGEI Headline"
+}
+// Define a camada de fontes
+
+$font-path: "../fonts/";
+
+@mixin font-face($style-name, $file, $category: "", $weight: normal) {
+	$filepath: "#{$font-path}#{$file}";
+
+	@font-face {
+	font-family: "#{$style-name}";
+	src: url("#{$filepath}.woff2") format("woff2"),
+			url("#{$filepath}.woff") format("woff");
+	font-weight: #{$weight};
+	font-display: swap;
 	font-style: normal;
+	unicode-range: U+000-5FF;
+	}
+
+	%#{$style-name} {
+	font-weight: #{$weight};
+	font-family: "#{$style-name}";
+
+	@if $category != "" {
+		font-family: "#{$style-name}", #{$category};
+	}
+	}
 }
 
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("fonts/LGEIHeadline-Light") format("woff2"),
-		url("fonts/LGEIHeadline-Light") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
+// LGEI Headline
+@include font-face("LGEI Headline", "LGEIHeadline-Thin", "sans-serif", 100);
+@include font-face("LGEI Headline", "LGEIHeadline-Light", "sans-serif", 300);
+@include font-face("LGEI Headline", "LGEIHeadline-Regular", "sans-serif", 400);
+@include font-face("LGEI Headline", "LGEIHeadline-Semibold", "sans-serif", 600);
+@include font-face("LGEI Headline", "LGEIHeadline-Bold", "sans-serif", 700);
 
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("assets/fonts/LGEIHeadline-Regular") format("woff2"),
-		url("assets/fonts/LGEIHeadline-Regular") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
+// LGEI Text
+@include font-face("LGEI Text", "LGEIText-Light", "sans-serif", 300);
+@include font-face("LGEI Text", "LGEIText-Regular", "sans-serif", 400);
+@include font-face("LGEI Text", "LGEIText-SemiBold", "sans-serif", 600);
+@include font-face("LGEI Text", "LGEIText-Bold", "sans-serif", 700);
 
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("/assets/fonts/LGEIHeadline-Semibold") format("woff2"),
-		url("/assets/fonts/LGEIHeadline-Semibold") format("woff");
-	font-weight: 600;
-	font-style: normal;
-}
 
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("/assets/fonts/LGEIHeadline-Thin") format("woff2"),
-		url("/assets/fonts/LGEIHeadline-Thin") format("woff");
-	font-weight: 100;
-	font-style: normal;
-}
 
-/* LGEI Text */
-@font-face {
-	font-family: "LGEI Text";
-	src: url("assets/fonts/LGEIText-Bold.woff2") format("woff2"),
-		url("assets/fonts/LGEIText-Boldwoff") format("woff");
-	font-weight: bold;
-	font-style: normal;
-}
 
-@font-face {
-	font-family: "LGEI Text";
-	src: url("/assets/fonts/LGEIText-Light") format("woff2"),
-		url("/assets/fonts/LGEIText-Light") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: "LGEI Headline";
+// 	src: url($theme-uploads.LGEIHeadline-Bold) format("woff2");
+// 	font-weight: bold;
+// 	font-style: normal;
+//   }
 
-@font-face {
-	font-family: "LGEI Text";
-	src: url("assets/fonts/LGEIText-Regular.woff2") format("woff2"),
-		url("assets/fonts/LGEIText-Regular.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: "LGEI Headline";
+// 	src: url("assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
+// 		url("assets/fonts/LGEIHeadline-Bold.woff") format("woff");
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
 
-@font-face {
-	font-family: "LGEI Text";
-	src: url("/assets/fonts/LGEIText-SemiBold") format("woff2"),
-		url("/assets/fonts/LGEIText-SemiBold") format("woff");
-	font-weight: 600;
-	font-style: normal;
-}
+// @font-face {
+// 	font-family: "LGEI Headline";
+// 	src: url("fonts/LGEIHeadline-Light") format("woff2"),
+// 		url("fonts/LGEIHeadline-Light") format("woff");
+// 	font-weight: 300;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "LGEI Headline";
+// 	src: url("assets/fonts/LGEIHeadline-Regular") format("woff2"),
+// 		url("assets/fonts/LGEIHeadline-Regular") format("woff");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "LGEI Headline";
+// 	src: url("/assets/fonts/LGEIHeadline-Semibold") format("woff2"),
+// 		url("/assets/fonts/LGEIHeadline-Semibold") format("woff");
+// 	font-weight: 600;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "LGEI Headline";
+// 	src: url("/assets/fonts/LGEIHeadline-Thin") format("woff2"),
+// 		url("/assets/fonts/LGEIHeadline-Thin") format("woff");
+// 	font-weight: 100;
+// 	font-style: normal;
+// }
+
+// /* LGEI Text */
+// @font-face {
+// 	font-family: "LGEI Text";
+// 	src: url("assets/fonts/LGEIText-Bold.woff2") format("woff2"),
+// 		url("assets/fonts/LGEIText-Boldwoff") format("woff");
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "LGEI Text";
+// 	src: url("/assets/fonts/LGEIText-Light") format("woff2"),
+// 		url("/assets/fonts/LGEIText-Light") format("woff");
+// 	font-weight: 300;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "LGEI Text";
+// 	src: url("assets/fonts/LGEIText-Regular.woff2") format("woff2"),
+// 		url("assets/fonts/LGEIText-Regular.woff") format("woff");
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "LGEI Text";
+// 	src: url("/assets/fonts/LGEIText-SemiBold") format("woff2"),
+// 		url("/assets/fonts/LGEIText-SemiBold") format("woff");
+// 	font-weight: 600;
+// 	font-style: normal;
+// }
 
 body {
 	font-family: "LGEI Text", sans-serif;
@@ -78,8 +132,8 @@ body {
 h1,
 h2,
 h3 {
-	font-family: "LGEI Headline", sans-serif;
-	font-weight: bold;
+	font-family: var(--lgei-headline);
+	font-weight: 700;
 }
 
 p {
