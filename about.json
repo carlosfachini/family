@@ -8,7 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
-    "custom_styles": "stylesheets/meu-tema.scss"
+    
   },
   "color_schemes": {
     "family-light": {
