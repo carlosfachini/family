@@ -382,7 +382,6 @@ html body #main-outlet {
       transition: box-shadow 100ms ease-in-out;
       box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
       overflow: hidden;
-      background-color: blue !important;
       &.visited {
         border: 1px solid rgba(var(--primary-rgb), 0.1);
         .discourse-tag {
@@ -580,9 +579,4 @@ html body #main-outlet {
 
 .title-voting {
   padding-left: 14px;
-}
-
-.full-width .contents .topic-list .topic-list-body .topic-list-item.visited {
-  border: 1px solid rgba(var(--primary-rgb), 0.1);
-  background: orange !important;
 }
