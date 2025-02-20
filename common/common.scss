@@ -7,35 +7,10 @@
 
 @font-face {
 	font-family: "LGEI Headline";
-	src: url("assets/fonts/LGEIHeadline-Bold") format("woff2"),
-		url("assets/fonts/LGEIHeadline-Bold") format("woff");
+	src: url($LGEIHeadline-Bold.LGEIHeadline-Bold) format("woff2");
 	font-weight: 700;
 	font-style: normal;
-}
-
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
-		url("assets/fonts/LGEIHeadline-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("../assets/fonts/LGEIHeadline-Bold.woff2") format("woff2"),
-		url("../assets/fonts/LGEIHeadline-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "LGEI Headline";
-	src: url("../fonts/LGEIHeadline-Bold.woff2") format("woff2"),
-		url("../fonts/LGEIHeadline-Bold.woff") format("woff");
-	font-weight: 700;
-	font-style: normal;
-}
+  }
 
 
 // @font-face {
