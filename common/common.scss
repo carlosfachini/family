@@ -4,7 +4,7 @@
 }
 // Define a camada de fontes
 
-$font-path: "../fonts/";
+$font-path: "../asstes/fonts/";
 
 @mixin font-face($style-name, $file, $category: "", $weight: normal) {
 	$filepath: "#{$font-path}#{$file}";
