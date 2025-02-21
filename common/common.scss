@@ -2,19 +2,7 @@
 	--font-title: "LGEI Headline";
 }
 
-// @font-face {
-//   font-family: "LGEI Headline";
-//   src: url("https://admin.lgfamilyclub.com/uploads/default/original/1X/LGEIHeadline-Bold.woff2") format("woff2");
-//   font-weight: 700;
-//   font-style: normal;
-// }
 
-// @font-face {
-//   font-family: "LGEI Text";
-//   src: url("https://admin.lgfamilyclub.com/uploads/default/original/1X/LGEIText-Regular.woff2") format("woff2");
-//   font-weight: 400;
-//   font-style: normal;
-// }
 
 
 @font-face {
@@ -30,74 +18,6 @@
 	font-weight: 400;
 }
 
-// @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url("fonts/LGEIHeadline-Light") format("woff2"),
-// 		url("fonts/LGEIHeadline-Light") format("woff");
-// 	font-weight: 300;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url("assets/fonts/LGEIHeadline-Regular") format("woff2"),
-// 		url("assets/fonts/LGEIHeadline-Regular") format("woff");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url("/assets/fonts/LGEIHeadline-Semibold") format("woff2"),
-// 		url("/assets/fonts/LGEIHeadline-Semibold") format("woff");
-// 	font-weight: 600;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "LGEI Headline";
-// 	src: url("/assets/fonts/LGEIHeadline-Thin") format("woff2"),
-// 		url("/assets/fonts/LGEIHeadline-Thin") format("woff");
-// 	font-weight: 100;
-// 	font-style: normal;
-// }
-
-// /* LGEI Text */
-// @font-face {
-// 	font-family: "LGEI Text";
-// 	src: url("assets/fonts/LGEIText-Bold.woff2") format("woff2"),
-// 		url("assets/fonts/LGEIText-Boldwoff") format("woff");
-// 	font-weight: bold;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "LGEI Text";
-// 	src: url("/assets/fonts/LGEIText-Light") format("woff2"),
-// 		url("/assets/fonts/LGEIText-Light") format("woff");
-// 	font-weight: 300;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "LGEI Text";
-// 	src: url("assets/fonts/LGEIText-Regular.woff2") format("woff2"),
-// 		url("assets/fonts/LGEIText-Regular.woff") format("woff");
-// 	font-weight: normal;
-// 	font-style: normal;
-// }
-
-// @font-face {
-// 	font-family: "LGEI Text";
-// 	src: url("/assets/fonts/LGEIText-SemiBold") format("woff2"),
-// 		url("/assets/fonts/LGEIText-SemiBold") format("woff");
-// 	font-weight: 600;
-// 	font-style: normal;
-// }
-
-// body {
-// 	font-family: "LGEI Text", sans-serif;
-// }
 
 h1,
 h2,
@@ -772,18 +692,18 @@ html body #main-outlet {
 }
 
 
-#main-outlet-wrapper {
-	box-sizing: border-box;
-	width: 100%;
-	display: grid;
-	grid-template-areas:"content sidebar" "below-content sidebar" !important;
-	grid-template-rows: auto 1fr ;
-	grid-template-columns: 0 minmax(0, 1fr);
-	gap: 0;
-}
+// #main-outlet-wrapper {
+// 	box-sizing: border-box;
+// 	width: 100%;
+// 	display: grid;
+// 	grid-template-areas:"content sidebar" "below-content sidebar" !important;
+// 	grid-template-rows: auto 1fr ;
+// 	grid-template-columns: 0 minmax(0, 1fr);
+// 	gap: 0;
+// }
 
-body.has-sidebar-page #main-outlet-wrapper {
-    grid-template-columns: minmax(0, 1fr) var(--d-sidebar-width) ;
-    gap: 0 2em;
-    padding-left: 0;
-}
+// body.has-sidebar-page #main-outlet-wrapper {
+//     grid-template-columns: minmax(0, 1fr) var(--d-sidebar-width) ;
+//     gap: 0 2em;
+//     padding-left: 0;
+// }
